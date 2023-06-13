@@ -15,7 +15,7 @@ export default function Home(props) {
     const { history } = props;
 
     const positionInitial =
-        screen.width > 500 ? [37.09024, -95.712891] : [37.09024, -80.712891];
+        screen.width > 600 ? [37.09024, -95.712891] : [37.09024, -80.712891];
 
     const cities = ["Miami", "New York", "Orlando"];
 
