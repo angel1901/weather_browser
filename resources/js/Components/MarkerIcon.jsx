@@ -1,7 +1,6 @@
 import L from "leaflet";
-import markerIconPng from "leaflet/dist/images/marker-icon.png";
-console.log(markerIconPng);
+
 export const MarkerIcon = L.icon({
-    iconUrl: markerIconPng,
+    iconUrl: require("../node_modules/leaflet/dist/images/marker-icon.png"),
     // shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
 });
