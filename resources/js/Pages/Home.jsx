@@ -14,7 +14,9 @@ import { MarkerIcon } from "@/Components/MarkerIcon";
 export default function Home(props) {
     const { history } = props;
 
-    const positionInitial = [37.09024, -95.712891];
+    const positionInitial =
+        screen.width > 500 ? [37.09024, -95.712891] : [37.09024, -80.712891];
+
     const cities = ["Miami", "New York", "Orlando"];
 
     const [selectedCity, setSelectedCity] = useState();
