@@ -1,8 +1,8 @@
 import L from "leaflet";
-
-import IconMarker from "public/images/marker-icon.png";
+import icon from "/assets/images/marker-icon-2x.png";
 
 export const MarkerIcon = L.icon({
-    iconUrl: IconMarker,
-    // shadowUrl: require("leaflet/dist/images/marker-shadow.png"),
+    iconUrl: icon,
+    iconSize: [20, 30], // Adjust the dimensions according to your needs
+    iconAnchor: [7, 25], // Adjust the anchor position if necessary
 });

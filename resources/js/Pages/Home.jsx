@@ -9,6 +9,7 @@ import Nav from "@/Components/Nav";
 
 import { useState } from "react";
 import { Link } from "@inertiajs/react";
+import { MarkerIcon } from "@/Components/MarkerIcon";
 
 export default function Home(props) {
     const { history } = props;
@@ -120,7 +121,11 @@ export default function Home(props) {
                 />
 
                 {response?.map((res, index) => (
-                    <Marker position={res?.geocode} key={index}>
+                    <Marker
+                        position={res?.geocode}
+                        key={index}
+                        icon={MarkerIcon}
+                    >
                         <Popup>
                             <Typography
                                 variant="body2"
